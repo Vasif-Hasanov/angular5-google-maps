@@ -18,7 +18,7 @@ import { AgmCoreModule } from '@agm/core';
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'Your api key'
+      apiKey: 'your api key'
       // tslint:disable-next-line:max-line-length
       // add your own key, just go there for getting a key https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true
     })

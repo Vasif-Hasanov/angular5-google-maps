@@ -4,3 +4,5 @@ export class Marker {
     lng: Number;
     draggable: boolean;
 }
+
+
