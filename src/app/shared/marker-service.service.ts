@@ -14,10 +14,10 @@ export class MarkerService extends LocalStorage {
     return markers;
   }
 
-  addMarkers(newMarker) {
-    // tslint:disable-next-line:prefer-const
-    let markers = JSON.parse(localStorage.getItem('markers'));
-    markers.push(newMarker);
+   addMarkers(m) {
+
+    const markers = JSON.parse(localStorage.getItem('markers'));
+    markers.push(m);
     localStorage.setItem('markers', JSON.stringify(markers));
   }
 
@@ -30,6 +30,20 @@ export class MarkerService extends LocalStorage {
         if (m.lat === markers[i].lat && m.lng === markers[i].lng) {
           markers[i].lat = newLat;
           markers[i].lng = newLng;
+        }
+      }
+
+      localStorage.setItem('markers', JSON.stringify(markers));
+  }
+
+  removeMarker(m) {
+      // tslint:disable-next-line:prefer-const
+      let markers = JSON.parse(localStorage.getItem('markers'));
+
+      // tslint:disable-next-line:prefer-const
+      for (let i = 0; i < markers.length; i++) {
+        if (m.lat === markers[i].lat && m.lng === markers[i].lng) {
+          markers.splice(1, i);
         }
       }
 

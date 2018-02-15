@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { MarkerServiceService } from './marker-service.service';
+import { MarkerService } from './marker-service.service';
 
 describe('MarkerServiceService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [MarkerServiceService]
+      providers: [MarkerService]
     });
   });
 
-  it('should be created', inject([MarkerServiceService], (service: MarkerServiceService) => {
+  it('should be created', inject([MarkerService], (service: MarkerService) => {
     expect(service).toBeTruthy();
   }));
 });

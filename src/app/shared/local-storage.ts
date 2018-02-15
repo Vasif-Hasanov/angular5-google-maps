@@ -6,12 +6,7 @@ export class LocalStorage {
         if (localStorage.getItem('markers') === null || localStorage.getItem('markers') === undefined ) {
             console.log('ok...');
             markers = [
-                {
-                    name: 'Sahil metro',
-                    lat: 40.372014,
-                    lng: 49.844402,
-                    draggable: true
-                  },
+                // hardcoded
                   {
                     name: 'Icarishahar metro',
                     lat: 40.366027,

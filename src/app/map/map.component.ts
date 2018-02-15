@@ -79,6 +79,18 @@ export class MapComponent {
     this.markerService.addMarkers(newMarker);
 
   }
+
+  onRemoveMarker(m) {
+    // tslint:disable-next-line:prefer-const
+    for (let i = 0; i < this.markers.length; i++) {
+      if (m.lat === this.markers[i].lat && m.lng === this.markers[i].lng) {
+          this.markers.splice(i, 1);
+
+      }
+      }
+      this.markerService.removeMarker(m);
+
+  }
 }
 
 

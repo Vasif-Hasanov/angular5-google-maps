@@ -20,9 +20,9 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: ' AIzaSyDsBOAtvu2bwxO8ihyOzEhICWu6glxc7uY'
+      apiKey: 'add your api key'
       // tslint:disable-next-line:max-line-length
-      // add your own key, just go there for getting a key https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true
+      // add your own key, just go there for getting a key >>>>>  https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true
     })
   ],
   providers: [ MarkerService ],
