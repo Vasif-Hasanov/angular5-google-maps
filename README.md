@@ -1,4 +1,6 @@
-# Angular5GoogleMap
+# Angular 5 Google Maps
+
+This is simple v1, v2 will come soon
 
 This DEMO project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
@@ -26,3 +28,5 @@ That's it? nope after playing with markers you can safely reload the page, every
 Thanks Local Storage! 
 
 ![map4](https://user-images.githubusercontent.com/32272345/36277649-e48125aa-12aa-11e8-9e80-edf3cc595af7.gif)
+
+if you spot any bugs, please open an issue and submit or fix and pull request if you want to contribute :)
