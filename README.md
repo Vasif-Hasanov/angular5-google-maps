@@ -1,27 +1,22 @@
 # Angular5GoogleMap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+This DEMO project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
 ## Development server
+Download or clone then run `npm install or npm i`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Finally run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+what can you do with this map?
 
-## Build
+- Add your marker as many as you wish
+- Move your marker
+- Update your marker
+- Name your marker
+- Remove your marker
+- Add latitude and longitude for a spesific place in input field
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+That's it? nope after playing with markers you can safely reload the page, everything will remain as the same.
+Thanks Local Storage! 
