@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class MapComponent {
 
+  title = 'Angular 5 Google Map';
+  lat = 51.678418;
+  lng = 7.809007;
+
   constructor() { }
 
 

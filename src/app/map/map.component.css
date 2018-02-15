@@ -2,3 +2,8 @@
     margin-top: 5rem
 }
 
+
+agm-map {
+    height: 25rem;
+    width: 65rem;
+  }
