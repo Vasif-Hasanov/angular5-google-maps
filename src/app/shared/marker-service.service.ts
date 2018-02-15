@@ -20,4 +20,19 @@ export class MarkerService extends LocalStorage {
     markers.push(newMarker);
     localStorage.setItem('markers', JSON.stringify(markers));
   }
+
+  updateMarker(m, newLat, newLng) {
+      // tslint:disable-next-line:prefer-const
+      let markers = JSON.parse(localStorage.getItem('markers'));
+
+      // tslint:disable-next-line:prefer-const
+      for (let i = 0; i < markers.length; i++) {
+        if (m.lat === markers[i].lat && m.lng === markers[i].lng) {
+          markers[i].lat = newLat;
+          markers[i].lng = newLng;
+        }
+      }
+
+      localStorage.setItem('markers', JSON.stringify(markers));
+  }
 }

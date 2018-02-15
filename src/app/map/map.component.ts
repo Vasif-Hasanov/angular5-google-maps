@@ -32,7 +32,7 @@ export class MapComponent {
   }
 
   onClickedMarker(marker: Marker, i: number) {
-    // console.log(`your marker ${marker.name} clicked at index ${i}`);
+    // console.log(`your marker ${marker.name} was clicked at index ${i}`);
   }
 
   onClickedMap(e) {
@@ -54,9 +54,10 @@ export class MapComponent {
       draggable: false
 
     };
-    // this is for local storage, will update asap
+
     const newLat = e.coords.lat;
-    const newLng = e.coord.lng;
+    const newLng = e.coords.lng;
+    this.markerService.updateMarker(updatedMarker, newLat, newLng);
   }
 
 
