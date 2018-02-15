@@ -16,7 +16,13 @@ what can you do with this map?
 - Update your marker
 - Name your marker
 - Remove your marker
-- Add latitude and longitude for a spesific place in input field
+
+![map1](https://user-images.githubusercontent.com/32272345/36277537-9fb10c9c-12aa-11e8-8ee8-2a2e891102b7.gif)
+
+- Add Location name, latitude ,longitude and whether make it draggable  in the input field
+![map2](https://user-images.githubusercontent.com/32272345/36277619-d31acef6-12aa-11e8-81a8-3761af05b6e9.gif)
 
 That's it? nope after playing with markers you can safely reload the page, everything will remain as the same.
 Thanks Local Storage! 
+
+![map4](https://user-images.githubusercontent.com/32272345/36277649-e48125aa-12aa-11e8-9e80-edf3cc595af7.gif)
