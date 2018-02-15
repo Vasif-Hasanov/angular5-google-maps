@@ -1,6 +1,35 @@
 <h1>{{ title }}</h1>
 
+<div class="panel panel-default">
+  <div class="panel-body">
+    <form (submit)="onAddMarker()">
+      <label>Location name</label>
+      <input type="text" [(ngModel)]="locationName" name="locationName">
 
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      <label>Latitude</label>
+      <input type="number" [(ngModel)]="latName" name="latName">
+
+      <label>Longitute</label>
+      <input type="number" [(ngModel)]="lngName" name="lngName">
+
+      <label>Draggable?</label>
+      <select [(ngModel)]="draggableMarker" name="draggableMarker">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <input class="btn btn-outline-secondary" type="submit" value="mark it">
+
+    </form>
+  </div>
+</div>
+
+<agm-map [latitude]="lat" [longitude]="lng" [zoomControl]="true" [disableDefaultUI]="false" (mapClick)="onClickedMap($event)">
+  <agm-marker *ngFor="let marker of markers; let i = index" [latitude]="marker.lat" [longitude]="marker.lng" 
+  (markerClick)="onClickedMarker(marker, i)"
+    [latitude]="marker.lat" [longitude]="marker.lng" [markerDraggable]="marker.draggable" (dragEnd)="markerDragEnd(marker, $event)">
+    <agm-info-window>
+      <strong>{{ marker.name }}</strong>
+    </agm-info-window>
+  </agm-marker>
 </agm-map>
