@@ -24,7 +24,7 @@ export class MapComponent {
   draggableMarker;
   isDraggable;
 
-  // markers are not in a right positon, I'll move them to the markers.ts
+
   markers: Marker[] = [ ];
 
   constructor(private markerService: MarkerService) {
