@@ -5,7 +5,7 @@ This is simple v1, v2 will come soon
 This DEMO project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
 ## Development server
-Download or clone then run `npm install or npm i`
+Download or clone then run `npm install` or `npm i`
 
 Finally run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
